@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/cvcss.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>CV Michael Smague</title>
 </head>
 
@@ -27,19 +27,28 @@
     <img class="user" src="./img_cv/mike.jpg" alt="avatar">
 
     <section class="section1">
+        <button>Télécharger le CV</button>
+        <span class="textleft">A propos de moi</span>
         <div class="pitch">
-            <span class="textleft">A propos de moi</span>
             <p>"Motivé et dynamique, je souhaite mettre en œuvre mes
                 compétences pour contribuer au rayonnement et au
                 développement de votre entreprise/organisation."</p>
-            
-            
-            <div class="donnees">
-                <img id="home" src="./img_cv/june.png" alt="birth">
-                <img id="home" src="./img_cv/geo.png" alt="geo">
-                <img id="home" src="./img_cv/drive.png" alt="drive">
-            </div>       
         </div>
+
+        <div class="donnees">
+            <div>
+                <img class="home" src="./img_cv/june.png" alt="birth">
+                <p><br>45<br>ANS</p>
+            </div>
+            <div>
+                <img class="home" src="./img_cv/location.svg" alt="geo">
+                <p>Valenciennes</p>
+            </div>
+            <div>
+                <img class="home" src="./img_cv/drive.png" alt="drive">
+            </div>
+        </div>
+
         <span class="textright">Mes loisirs</span>
         <div>
             <div class="loisirs"><img src="./img_cv/rando.avif" alt="rando">
@@ -63,13 +72,11 @@
         <img id="point" src="./img_cv/points.svg" alt="points">
         <section id="competences" class="section3">
             <header>
-                <img id="" src="./img_cv/work2.jpg" alt="work">
+                <img src="./img_cv/work.jpg" alt="work">
 
                 <h1 class="heartbeat">Mes compétences
                 </h1>
             </header>
-
-
 
             <span class="textleft">
                 Savoir-être
@@ -113,12 +120,26 @@
             <img id="point" src="./img_cv/points.svg" alt="points">
 
         </section>
+        <section>
+            <header id="experience">
+                <img src="./img_cv/work2.jpg" alt="work">
+                <h1 class="heartbeat">Expérience professionnelle
+                </h1>
+            </header>
+            <span class="textleft">
+                Formations
+            </span>
+            <span class="text right">
+                Expérience professionnelle
+            </span>
+
+        </section>
         <footer>
             <nav>
                 <ol>
                     <li><a href=""><i class="fa-regular fa-circle-user" style="color:white;"></i></a></li>
                     <li><a href="#competences"><i class="fa-sharp fa-solid fa-gear"></i></a></li>
-                    <li><a href=""><i class="fa-solid fa-briefcase"></i></a></li>
+                    <li><a href="#experience"><i class="fa-solid fa-briefcase"></i></a></li>
                     <li><a href=""><i class="fa-solid fa-phone"></i></a></li>
                 </ol>
             </nav>
