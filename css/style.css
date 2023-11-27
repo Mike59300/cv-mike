@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/reey');
 @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&display=swap');
+
 @keyframes heartbeat {
     from {
         -webkit-transform: scale(1);
@@ -40,16 +41,38 @@
     }
 }
 
+@keyframes slider-1 {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    25%,
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50%,
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75%,
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
 .heartbeat {
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
-#title {
-    color: grey;
-    bottom: 50%;
-    left: 5%;
-}
 
 body {
     background-image: url(../img_cv/degrade.jpg);
@@ -62,27 +85,66 @@ body {
     margin: 0;
     width: 100%;
 }
-button{
+
+.text-wrapper {
+    width: 100%;
+    height: 30%;
     position: absolute;
-    left: 10%;
-    top: 23%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background: #262626 -webkit-gradient(linear, left top, right top, from(#262626), 
+    to(#262626), color-stop(0.9, #fff)) 0 0 no-repeat;
+    -webkit-background-size: 600px;
+    background-size: 600px;
+    color: rgb(255, 255, 255, 0.1);
+    -webkit-background-clip: text;
+    animation: animate 3s infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    10% {
+        background-position: -1000px;
+    }
+
+    20% {
+        background-position: top left;
+    }
+    90% {
+        background-position: top right;
+    }
+    100% {
+        background-position: 1000px;
+    }
+}
+header p{
+    font-size: 2rem;
+}
+
+button {
+    position: absolute;
+    left: 15%;
+    top: 30%;
     z-index: 2;
-    color: white;
     background-color: rgb(64, 161, 205);
     border-radius: 30px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 10px;
     margin-left: 40%;
 
 }
+
 h1 {
-    font-family: 'Reey', serif;
+    font-family: 'Montserrat', serif;
     margin-top: 15px;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: black;
     position: absolute;
-    bottom: 77%;
+    bottom: 65%;
     right: 5%;
+    text-align: right;
 }
 
 h2 {
@@ -93,20 +155,23 @@ h2 {
     color: black;
 }
 
-.donnees{
+.donnees {
     justify-content: center;
     margin: 20px 0;
 }
-.donnees div{
+
+.donnees div {
     position: relative;
 }
-.donnees p{
+
+.donnees p {
     position: absolute;
     font-size: 1.6rem;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+
 .home {
     width: 40%;
     height: 30%;
@@ -117,26 +182,20 @@ h2 {
 
 span {
     display: block;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     font-family: 'Neuton', serif;
     color: white;
     margin: 50px 0 15px 0;
     background-color: rgba(165, 42, 42, 0.834);
-    border-radius: 40px;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
-.textleft{
+
+.textleft {
     text-align: left;
 }
-.textright{
+
+.textright {
     text-align: right;
-}
-li {
-    display: block;
-    border-width: solid 5px black;
-    text-align: center;
-    width: calc(100%/4);
-    padding: 10px 0;
 }
 
 header img {
@@ -151,12 +210,12 @@ header {
 }
 
 .user {
-    width: 36%;
-    height: 18vh;
+    width: 26%;
+    height: 14vh;
     position: absolute;
-    top: 17%;
+    top: 20%;
     z-index: 1;
-    right: 58%;
+    right: 67%;
     border-radius: 59%;
     filter: drop-shadow(2px 4px 32px grey);
 }
@@ -167,8 +226,8 @@ p {
 }
 
 .pitch {
-    margin: 60px 15px 10px 15px;
-    font-size: 1.5rem;
+    margin: 40px 10px 10px 10px;
+    font-size: 1.2rem;
     text-align: center;
 
 }
@@ -206,16 +265,16 @@ li {
     border-width: solid 5px black;
     text-align: center;
     width: calc(100%/4);
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 a {
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
 }
 
-.section3 {
-    
+.section2 {
+
     margin-top: 20px;
 }
 
@@ -225,31 +284,40 @@ a {
     box-sizing: border-box;
     justify-content: space-evenly;
 }
-.ios img{
+
+.ios img {
     width: 40%;
     height: 30%;
 }
 
-.loisirs {
-    position: relative;
-    font-size: 1.3rem;
+.slider-1 {
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.slider-1 .slider {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    animation: slider-1 5s infinite ease-out;
+}
+
+.slider-1 img {
+    width: 100%;
 }
 
 #point {
     width: 30%;
     margin: 40px 0;
 }
-.flag{
+
+.flag {
     display: block;
     width: 50%;
     height: 30%;
     margin: auto;
 }
-.section3 p {
-    font-size: 1.2rem;
+
+.section2 p {
+    font-size: 1rem;
 }
 
 .skill1 {
@@ -263,6 +331,38 @@ a {
     width: 25%;
     height: 10vh;
 }
+.section3 p{
+    font-size: 0.7rem;
+}
+.section3 div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.section3 div>div{
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3 div>img {
+    width: 30%;
+    padding: 10px;
+}
+.section4 div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.section4 div>img {
+    width: 30%;
+    padding: 20px;
+}
+
+
 
 /* Media tablette */
 @media screen and (min-width:768px) and (max-width: 1023px) {}
