@@ -212,6 +212,7 @@ span {
 .textright {
     text-align: right;
     padding: 0 10px;
+    flex-direction: column;
 }
 
 header img {
@@ -226,14 +227,13 @@ header {
 }
 
 .user {
-    width: 26%;
-    height: 14vh;
+    width: 39%;
+    height: 27vh;
     position: absolute;
-    top: 20%;
+    top: 14%;
     z-index: 1;
-    right: 67%;
-    border-radius: 59%;
-    filter: drop-shadow(2px 4px 32px grey);
+    right: 56%;
+    border-radius: 30px;
 }
 
 p {
@@ -332,6 +332,7 @@ a {
     width: 50%;
     height: 30%;
     margin: auto;
+    padding: 10px 0;
 }
 
 .section2 p {
