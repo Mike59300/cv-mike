@@ -137,6 +137,14 @@ button {
     margin-left: 40%;
 
 }
+.download{
+    width: 30%;
+    text-align: right;
+    margin: auto;
+}
+.download img{
+    width: 80%;
+}
 .box{
     position: relative;
     display: flex;
@@ -212,7 +220,6 @@ span {
 .textright {
     text-align: right;
     padding: 0 10px;
-    flex-direction: column;
 }
 
 header img {
@@ -227,10 +234,10 @@ header {
 }
 
 .user {
-    width: 39%;
-    height: 27vh;
+    width: 30%;
+    height: 21vh;
     position: absolute;
-    top: 14%;
+    top: 17%;
     z-index: 1;
     right: 56%;
     border-radius: 30px;
@@ -351,7 +358,7 @@ a {
     height: 10vh;
 }
 .section3 p{
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 .section3 div{
     display: flex;
@@ -377,9 +384,21 @@ a {
 
 }
 .time{
-    width: 25%;
+    width: 50%;
     height: 10vh;
     padding: 10px;
+}
+.divtime{
+    position: relative;
+    width: 30%;
+}
+.divtime p{
+    width: 30%;
+    position: absolute;
+    z-index: 2;
+    bottom: 8%;
+    font-size: 1.2rem;
+
 }
 
 .section4 div{
@@ -406,4 +425,37 @@ a {
 @media screen and (min-width:768px) and (max-width: 1023px) {}
 
 /* Media PC */
-@media screen and (min-width:1024px) {}
+@media screen and (min-width:1024px) {
+    nav{
+        display: none;
+    }
+    .section1 img{
+        width: 10%;
+    }
+    .section2 img{
+        width: 10%;
+    }
+    
+    .donnees{
+        flex-direction: row;
+    }
+    i{
+        font-size: 80px;
+    }
+    .user{
+        display: none;
+    }
+    #point{
+        display: none;
+    }
+    span{
+        font-size: 4rem;
+    }
+    .time{
+        display: none;
+    }
+    .firm2{
+        height: 60vh;
+    
+    }
+}
