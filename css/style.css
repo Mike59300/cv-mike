@@ -139,11 +139,11 @@ button {
 }
 .download{
     width: 30%;
-    text-align: right;
-    margin: auto;
+    text-align: center;
+    
 }
 .download img{
-    width: 80%;
+    width: 100%;
 }
 .box{
     position: relative;
@@ -161,9 +161,9 @@ i{
 }
 
 h1 {
-    font-family: 'Montserrat', serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 15px;
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: black;
     position: absolute;
     bottom: 65%;
@@ -173,7 +173,7 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
-    font-family: 'Neuton', serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 20px;
     position: absolute;
     color: black;
@@ -190,7 +190,7 @@ h2 {
 
 .donnees p {
     position: absolute;
-    font-size: 1.6rem;
+    font-size: 2rem;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -203,10 +203,11 @@ h2 {
 
 }
 
+
 span {
     display: block;
     font-size: 1.9rem;
-    font-family: 'Neuton', serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 50px 0 15px 0;
     background-color: rgba(165, 42, 42, 0.834);
@@ -343,7 +344,7 @@ a {
 }
 
 .section2 p {
-    font-size: 1rem;
+    font-size: 1.7rem;
 }
 
 .skill1 {
@@ -357,8 +358,8 @@ a {
     width: 25%;
     height: 10vh;
 }
-.section3 p{
-    font-size: 1rem;
+.section3 .divtime>p{
+    font-size: 1.5rem;
 }
 .section3 div{
     display: flex;
@@ -399,6 +400,9 @@ a {
     bottom: 8%;
     font-size: 1.2rem;
 
+}
+.section4 {
+    padding-bottom: 30%;
 }
 
 .section4 div{
