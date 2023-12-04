@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.cdnfonts.com/css/reey');
 @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&display=swap');
 
@@ -77,6 +77,7 @@
 body {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     text-align: center;
     margin: 0;
     width: 100%;
@@ -86,75 +87,35 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.text-wrapper {
-    width: 100%;
-    height: 30%;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    background: #e9e6e6 -webkit-gradient(linear, left top, right top, from(#262626), 
-    to(#262626), color-stop(9, #fff)) 0 0 no-repeat;
-    -webkit-background-size: 600px;
-    background-size: 600px;
-    color: rgb(255, 255, 255, 0.1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: animate 1s infinite;
-}
-
-@keyframes animate {
-
-    0%,
-    10% {
-        background-position: -1000px;
-    }
-
-    20% {
-        background-position: top left;
-    }
-    90% {
-        background-position: top right;
-    }
-    100% {
-        background-position: 1000px;
-    }
-}
 header p{
     font-size: 2rem;
+    font-weight: 900;
 }
-
-button {
+.mike{
+    width: 300px;
     position: absolute;
-    left: 15%;
-    top: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: 2;
-    background-color: rgb(64, 161, 205);
-    border-radius: 30px;
-    font-size: 1rem;
-    padding: 10px;
-    margin-left: 40%;
-
+    color: white;
+}
+.avatar{
+    width: 20%;
+    float: left;
+    padding: 0 15px;
 }
 .download{
-    width: 30%;
-    text-align: right;
-    margin: auto;
+    text-align: center;
+    margin: 0;
 }
 .download img{
     width: 80%;
 }
-.box{
-    position: relative;
-    display: flex;
-    border-radius: 20px;
+.download p{
+    font-size: 1rem;
 }
-.box::before{
-    content: '';
-    position: absolute;
-    background-color: #e9e6e6;
-}
+
 i{
     text-align: left;
     font-size: 40px;
@@ -164,6 +125,7 @@ h1 {
     font-family: 'Montserrat', serif;
     margin-top: 15px;
     font-size: 1.7rem;
+    font-weight: 800;
     color: black;
     position: absolute;
     bottom: 65%;
@@ -186,6 +148,7 @@ h2 {
 
 .donnees div {
     position: relative;
+    text-align: center;
 }
 
 .donnees p {
@@ -200,6 +163,7 @@ h2 {
     width: 40%;
     height: 30%;
     margin: 10px 0;
+    filter: drop-shadow(2px 9px 14px black);
 
 }
 
@@ -209,8 +173,9 @@ span {
     font-family: 'Neuton', serif;
     color: white;
     margin: 50px 0 15px 0;
-    background-color: rgba(165, 42, 42, 0.834);
     padding: 5px 10px;
+    background-color: rgb(64, 161, 205);
+
 }
 
 .textleft {
@@ -312,7 +277,10 @@ a {
 
 .ios img{
     width: 40%;
-    height: 20vh;
+    height: 25vh;
+    filter: drop-shadow(20px 24px 10px grey);
+    padding: 10px 0;
+
 }
 
 .slider-1 {
@@ -330,32 +298,39 @@ a {
 }
 
 #point {
-    width: 30%;
-    margin: 40px 0;
+    width: 20%;
+    margin: 20px 0;
 }
 
 .flag {
-    display: block;
+    display: inline-block;
     width: 50%;
     height: 30%;
-    margin: auto;
+    margin: 0;
     padding: 10px 0;
+}
+section p{
+    font-weight: bolder;
 }
 
 .section2 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .skill1 {
-    width: 20%;
-    height: 10vh;
+    width: 30%;
+    height: 20vh;
     padding: 10px;
+    filter: drop-shadow(20px 24px 10px grey);
+
 }
 
 .skill2 {
     padding: 10px;
-    width: 25%;
-    height: 10vh;
+    width: 30%;
+    height: 20vh;
+    filter: drop-shadow(20px 24px 10px grey);
+
 }
 .section3 p{
     font-size: 1rem;
@@ -368,6 +343,7 @@ a {
     margin: 20px 0;
 }
 .section3 div>div{
+    margin: 5px 5px;
     width: 75%;
     flex-direction: column;
     align-items: center;
@@ -383,25 +359,35 @@ a {
     width: 45%;
 
 }
+.firm3{
+    width: 90%;
+    height: 20vh;
+}
 .time{
-    width: 50%;
-    height: 10vh;
-    padding: 10px;
+    width: 58%;
+    height: 18vh;
+    filter: drop-shadow(20px 9px 14px grey);  
 }
 .divtime{
     position: relative;
     width: 30%;
 }
 .divtime p{
-    width: 30%;
+    color: white;
     position: absolute;
     z-index: 2;
-    bottom: 8%;
     font-size: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
+}
+.section4{
+    padding-bottom: 30%;
 }
 
 .section4 div{
+    padding-top: 10%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -414,9 +400,10 @@ a {
     padding: 0;
 }
 
-.section4 img {
+.section4 div img {
     width: 30%;
     padding: 20px;
+    filter: drop-shadow(20px 24px 10px grey);
 }
 
 
@@ -427,17 +414,49 @@ a {
 /* Media PC */
 @media screen and (min-width:1024px) {
     nav{
-        display: none;
+        bottom: 0;
+    }
+    header img {
+        width: 100%;
+        height: 60vh;
+        padding: 0;
     }
     .section1 img{
         width: 10%;
     }
-    .section2 img{
-        width: 10%;
+    .slider img{
+        width: 100%;
+    }
+    .skill1,.skill2{
+        width: 16%;
+        height: 30vh;
+        filter: drop-shadow(2px 9px 14px black);
+        padding: 30px 70px;
+    }
+    .ios img{
+        width: 16%;
+        height: 30vh;
+        padding: 30px 70px;
+        filter: drop-shadow(2px 9px 14px black);
+
+    }
+    .section2 header img{
+        width: 100%;
+    }
+    .section2 p{
+        font-size: 1.5rem;
+        line-height: 45px;
     }
     
     .donnees{
-        flex-direction: row;
+        display: flex;
+    }
+    .donnees div{
+        width: calc(100%/3);
+    }
+    .donnees img{
+        width: 60%;
+        height: 35vh;
     }
     i{
         font-size: 80px;
@@ -445,17 +464,40 @@ a {
     .user{
         display: none;
     }
-    #point{
-        display: none;
-    }
     span{
-        font-size: 4rem;
+        font-size: 2rem;
+    }
+    .flag {
+        width: 30%;
+        height: 30%;
+        padding: 10px 0;
+        filter: drop-shadow(2px 9px 14px black);
+
     }
     .time{
         display: none;
     }
-    .firm2{
-        height: 60vh;
-    
+    .firm{
+        width: 50%;
+        height: 30vh;
     }
+    .firm2{
+        width: 35%;
+        height: 35vh;
+    }
+    .firm3{
+        width: 66%;
+        height: 35vh;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .section4 div{
+        flex-direction: row;
+    }
+    .section4 a{
+        width: calc(100%/3);
+    }
+    .section4 img {
+        width: 45%;
 }
