@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.cdnfonts.com/css/reey');
 @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&display=swap');
 
@@ -77,85 +77,98 @@
 body {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
     text-align: center;
     margin: 0;
     width: 100%;
 }
-section{
+
+section {
     background-image: url(../img_cv/degrade.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.text-wrapper {
+header p {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.txt {
+    color: white;
+    background-color: #000000;
+    line-height: 8rem;
     width: 100%;
-    height: 30%;
+}
+.wrapper{
+    height: 180px;
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    background: #e9e6e6 -webkit-gradient(linear, left top, right top, from(#262626), 
-    to(#262626), color-stop(9, #fff)) 0 0 no-repeat;
-    -webkit-background-size: 600px;
-    background-size: 600px;
-    color: rgb(255, 255, 255, 0.1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: animate 1s infinite;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    justify-content: center;
+    display: block;
+    width: 100%;
+    background: #000000;
 }
 
-@keyframes animate {
-
-    0%,
-    10% {
-        background-position: -1000px;
-    }
-
-    20% {
-        background-position: top left;
-    }
-    90% {
-        background-position: top right;
-    }
-    100% {
-        background-position: 1000px;
-    }
+.neon-wrapper{
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
 }
-header p{
-    font-size: 2rem;
-}
-
-button {
+.txt::before{
+    content: 'MICHAËL SMAGUE';
     position: absolute;
-    left: 15%;
-    top: 30%;
-    z-index: 2;
-    background-color: rgb(64, 161, 205);
-    border-radius: 30px;
-    font-size: 1rem;
-    padding: 10px;
-    margin-left: 40%;
+    mix-blend-mode: difference;
+    filter: blur(2px);
+}
+.gradient{
+    background: linear-gradient(114.5793141156962deg, rgb(64, 161, 205), grey 97.84374999999999%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
 
 }
-.download{
-    width: 30%;
-    text-align: center;
-    
+.dodge{
+    background: radial-gradient(circle, white,black 35%) center / 25% 25%;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 7s linear infinite;
 }
-.download img{
+@keyframes dodge-area {
+    to {
+        transform: translate(50%,50%);
+    }
+}
+.avatar {
+    width: 20%;
+    float: left;
+    padding: 0 15px;
+}
+
+.download {
+    text-align: center;
+    margin: 0;
+}
+
+.download img {
     width: 100%;
 }
-.box{
-    position: relative;
-    display: flex;
-    border-radius: 20px;
+
+.download p {
+    font-size: 1rem;
 }
-.box::before{
-    content: '';
-    position: absolute;
-    background-color: #e9e6e6;
-}
-i{
+
+i {
     text-align: left;
     font-size: 40px;
 }
@@ -163,12 +176,18 @@ i{
 h1 {
     font-family: 'Montserrat', sans-serif;
     margin-top: 15px;
-    font-size: 2rem;
-    color: black;
+    font-size: 2.2rem;
+    color: white;
     position: absolute;
     bottom: 65%;
     right: 5%;
     text-align: right;
+    text-shadow: 2px 0 0 black, 2px 2px 0 black, 0 2px 0 black, -2px 2px 0 black, -2px 0 0 black
+    , -2px -2px 0 black
+    , 0 -2px 0 black
+    , 2px -2px 0 black
+    ;
+
 }
 
 h2 {
@@ -186,6 +205,7 @@ h2 {
 
 .donnees div {
     position: relative;
+    text-align: center;
 }
 
 .donnees p {
@@ -198,8 +218,8 @@ h2 {
 
 .home {
     width: 40%;
-    height: 30%;
     margin: 10px 0;
+    filter: drop-shadow(2px 9px 14px black);
 
 }
 
@@ -210,8 +230,10 @@ span {
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 50px 0 15px 0;
-    background-color: rgba(165, 42, 42, 0.834);
-    padding: 5px 10px;
+    padding: 10px;
+    background-color: rgb(64, 161, 205);
+
+
 }
 
 .textleft {
@@ -220,12 +242,10 @@ span {
 
 .textright {
     text-align: right;
-    padding: 0 10px;
 }
 
 header img {
     width: 100%;
-    height: 30vh;
 }
 
 header {
@@ -311,9 +331,11 @@ a {
     align-items: center;
 }
 
-.ios img{
+.ios img {
     width: 40%;
-    height: 20vh;
+    filter: drop-shadow(20px 24px 10px grey);
+    padding: 10px 0;
+
 }
 
 .slider-1 {
@@ -331,81 +353,101 @@ a {
 }
 
 #point {
-    width: 30%;
-    margin: 40px 0;
+    width: 10%;
+    margin: 20px 0;
 }
 
 .flag {
-    display: block;
-    width: 50%;
-    height: 30%;
-    margin: auto;
-    padding: 10px 0;
+    display: inline-block;
+    width: 30%;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+section p {
+    font-weight: bolder;
 }
 
 .section2 p {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
 .skill1 {
-    width: 20%;
-    height: 10vh;
+    width: 30%;
     padding: 10px;
+    filter: drop-shadow(20px 24px 10px grey);
+
 }
 
 .skill2 {
     padding: 10px;
-    width: 25%;
-    height: 10vh;
+    width: 30%;
+    filter: drop-shadow(20px 24px 10px grey);
+
 }
-.section3 .divtime>p{
+
+.section3 .divtime>p {
     font-size: 1.5rem;
 }
-.section3 div{
+
+.section3 div {
     display: flex;
     justify-content: space-evenly;
     box-sizing: border-box;
     align-items: center;
     margin: 20px 0;
 }
-.section3 div>div{
+
+.section3 div>div {
+    margin: 5px 5px;
     width: 75%;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
     justify-content: space-evenly;
 }
-.firm{
-    width: 65%;
-    height: 10vh;
+
+.firm {
+    width: 70%;
     margin: 10px 0;
 }
-.firm2{
-    width: 45%;
+
+.firm2 {
+    width: 70%;
 
 }
-.time{
-    width: 50%;
-    height: 10vh;
-    padding: 10px;
+
+.firm3 {
+    width: 54%;
 }
-.divtime{
+
+.time {
+    width: 58%;
+    filter: drop-shadow(20px 9px 14px grey);
+}
+
+.divtime {
     position: relative;
     width: 30%;
 }
-.divtime p{
-    width: 30%;
+
+.divtime p {
+    color: white;
     position: absolute;
     z-index: 2;
-    bottom: 8%;
     font-size: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
+
 .section4 {
     padding-bottom: 30%;
 }
 
-.section4 div{
+.section4 div {
+    padding-top: 10%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -413,14 +455,16 @@ a {
     flex-wrap: wrap;
     box-sizing: border-box;
 }
-.section4 header>img{
-    width: 100%;
+
+.section4 header>img {
+    height: 30vh;
     padding: 0;
 }
 
-.section4 img {
+.section4 div img {
     width: 30%;
     padding: 20px;
+    filter: drop-shadow(20px 24px 10px grey);
 }
 
 
@@ -430,36 +474,138 @@ a {
 
 /* Media PC */
 @media screen and (min-width:1024px) {
-    nav{
-        display: none;
+    nav {
+        bottom: 0;
     }
-    .section1 img{
+    .wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    header img {
+        height: 30%;
+        padding: 0;
+    }
+    header p {
+        font-size: 6rem;
+    }
+
+    .section1 img {
         width: 10%;
     }
-    .section2 img{
-        width: 10%;
+
+    .slider img {
+        width: 100%;
     }
-    
-    .donnees{
-        flex-direction: row;
+
+    .skill1,
+    .skill2 {
+        width: 16%;
+        filter: drop-shadow(2px 9px 14px black);
+        padding: 30px 130px;
     }
-    i{
+
+    .ios img {
+        width: 16%;
+        padding: 30px 125px;
+        filter: drop-shadow(2px 9px 14px black);
+
+    }
+
+    header img {
+        height: 50vh;
+    }
+
+    .section2 p {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .donnees {
+        display: flex;
+    }
+
+    .donnees div {
+        width: calc(100%/3);
+    }
+
+    .donnees img {
+        width: 60%;
+    }
+
+    i {
         font-size: 80px;
     }
-    .user{
+
+    .user {
         display: none;
     }
-    #point{
-        display: none;
+
+    span {
+        font-size: 2rem;
     }
-    span{
-        font-size: 4rem;
+
+    .flag {
+        width: 10%;
+        padding: 10px 15px;
+
     }
-    .time{
-        display: none;
+
+    .firm {
+        width: 50%;
     }
-    .firm2{
-        height: 60vh;
+
+    .firm2 {
+        width: 35%;
+    }
+
+    .firm3 {
+        width: 66%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .section4 div {
+        flex-direction: row;
+    }
+
+    .section4 a {
+        width: calc(100%/3);
+    }
+
+    .section4 img {
+        width: 45%;
+    }
+    .firm {
+        width: 35%;
+    }
+    
+    .firm2 {
+        width: 40%;
+    
+    }
+    
+    .firm3 {
+        width: 25%;
+    }
+    
+    .time {
+        width: 30%;
+    }
+    .section3 .divtime>p {
+        font-size: 3rem;
+        line-height: 55px;
+    }
+    section p {
+        font-weight: bolder;
+        font-size: 2.2rem;
+        line-height: 50px;
+    }
+    span {
+        font-size: 3.3rem;
     
     }
 }
