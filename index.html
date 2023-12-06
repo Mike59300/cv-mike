@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <img src="./img_cv/vintage.gif" alt="cine">
+        <img id="top" src="./img_cv/vintage.gif" alt="cine">
         <div class="wrapper">
             <div class="neon-wrapper">
                 <p class="txt">
@@ -25,19 +25,35 @@
                 <p class="gradient"></p>
                 <p class="dodge"></p>
             </div>
+
         </div>
+
     </header>
-    <section class="section1">
-        <div>
-            <img class="avatar" src="./img_cv/avatar.png" alt="avatar">
-            <div class="download">
-                <a href=""><i class="fa-solid fa-download fa-bounce"></i></a>
-                <br>
-                <p>CV VERSION PAPIER</p>
-            </div>
+    <nav class="navpc">
+        <ol class="menu">
+            <li><a href="#infos">INFORMATIONS</a></li>
+            <li><a href="#competences">COMPÉTENCES</i></a></li>
+            <li><a href="#experience">PARCOURS PROFESSIONNEL</a>
+                <ol class="sous-menu">
+                    <li><a href="">Formations</a></li>
+                    <li><a href="">Expérience professionnelle</a></li>
+                </ol>
+            </li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ol>
+    </nav>
+    <section id="infos" class="section1">
+
+
+        <div class="download">
+            <a href=""><i class="fa-solid fa-download fa-bounce"></i></a>
+            <br>
+            <p>CV VERSION PAPIER</p>
         </div>
         <span class="textleft">A PROPOS DE MOI</span>
         <div class="pitch">
+
+
             <p>"Motivé et dynamique, <br> je souhaite mettre en œuvre mes
                 compétences en matière d'opérateur de saisie pour contribuer au rayonnement et au
                 développement de votre entreprise/organisation."</p>
@@ -70,14 +86,28 @@
                 <img src="./img_cv/rando.jpg" alt="rando">
             </div>
         </div>
+        <div class="carrousel">
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            
+            <main id="carousel">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+               
+                <main>
+        </div>
     </section>
 
     <img id="point" src="./img_cv/point.png" alt="points">
-    <section id="competences" class="section2">
-        <header>
-            <img src="./img_cv/work.jpg" alt="work">
+    <section  class="section2">
+        <header id="competences">
+            
 
-            <h1 class="heartbeat">COMPÉTENCES
+            <h1  class="heartbeat">COMPÉTENCES
             </h1>
         </header>
 
@@ -86,21 +116,18 @@
         </span>
         <img class="skill1" src="./img_cv/savoir_etre.png" alt="soft">
 
-        <p>Empathie</p>
-        <p>Esprit d'équipe</p>
-        <p>Capacité d'adaptation</p>
+        <p>Empathie</p><br>
+        <p>Esprit d'équipe</p><br>
+        <p>Capacité d'adaptation</p><br>
         <p>Sens de la communication</p>
 
         <span class="textright">
             SAVOIR-FAIRE
         </span>
-
         <img class="skill2" src="./img_cv/savoir_faire.png" alt="hard">
-
-        <p>Gestion électronique de documents</p>
-        <p>Saisie et exploitation de bases de données</p>
+        <p>Gestion électronique de documents</p><br>
+        <p>Saisie et exploitation de bases de données</p><br>
         <p>Création de pages web</p>
-
         <span class="textleft">
             CONNAISSANCES
         </span>
@@ -127,7 +154,6 @@
     <img id="point" src="./img_cv/point.png" alt="points">
     <section id="experience" class="section3">
         <header id="experience">
-            <img src="./img_cv/work2.jpg" alt="work">
             <h1 class="heartbeat">EXPÉRIENCE PROFESSIONNELLE
             </h1>
         </header>
@@ -288,11 +314,10 @@
 
     <section id="contact" class="section4">
         <header>
-            <img src="./img_cv/contact.jpeg" alt="contact">
-
-
+            <h1  class="heartbeat">CONTACT
+            </h1>
         </header>
-        <div>
+        <div id="bottom">
             <a href="tel:0630309033"><img src="./img_cv/icon_phone.png" alt="phone"></a>
             <a href="mailto:michaelsmague@sfr.fr"><img src="./img_cv/mail.png" alt="mail"></a>
             <a href="https://www.linkedin.com/in/michael-smague/" target="_blank"><img src="./img_cv/linkedin.png"
@@ -302,8 +327,8 @@
 </body>
 <footer>
     <nav>
-        <ol>
-            <li><a href=""><i class="fa-solid fa-circle-info"></i></a></li>
+        <ol class="navmobile">
+            <li><a  href=""><i class="fa-solid fa-circle-info"></i></a></li>
             <li><a href="#competences"><i class="fa-solid fa-user-gear"></i></a></li>
             <li><a href="#experience"><i class="fa-solid fa-briefcase"></i></a></li>
             <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>
