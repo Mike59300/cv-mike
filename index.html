@@ -11,6 +11,7 @@
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./java/cv.js">
     <title>CV Michael Smague</title>
 </head>
 
@@ -29,14 +30,15 @@
         </div>
 
     </header>
-    <nav class="navpc">
+    <a href="#"><nav class="navpc"></a>
+    
         <ol class="menu">
             <li><a href="#infos">INFORMATIONS</a></li>
             <li><a href="#competences">COMPÉTENCES</i></a></li>
-            <li><a href="#experience">PARCOURS PROFESSIONNEL</a>
+            <li><a href="#experience">EXPERIENCE</a>
                 <ol class="sous-menu">
-                    <li><a href="">Formations</a></li>
-                    <li><a href="">Expérience professionnelle</a></li>
+                    <li><a href="#formations">Formations</a></li>
+                    <li><a href="#job">Expérience professionnelle</a></li>
                 </ol>
             </li>
             <li><a href="#contact">CONTACT</a></li>
@@ -62,7 +64,7 @@
         <div class="donnees">
             <div>
                 <img class="home" src="./img_cv/june.png" alt="birth">
-                <p><br>45<br>ANS</p>
+                <p><br>45 ANS</p>
             </div>
 
             <div>
@@ -91,43 +93,57 @@
             <input type="radio" name="position" />
             <input type="radio" name="position" />
             <input type="radio" name="position" />
-            
+
             <main id="carousel">
                 <div class="item"></div>
                 <div class="item"></div>
                 <div class="item"></div>
                 <div class="item"></div>
-               
+
                 <main>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
     </section>
 
-    <img id="point" src="./img_cv/point.png" alt="points">
-    <section  class="section2">
-        <header id="competences">
-            
+    <section id="competences" class="section2">
+        <header >
 
-            <h1  class="heartbeat">COMPÉTENCES
+
+            <h1 class="heartbeat">COMPÉTENCES
             </h1>
         </header>
 
         <span class="textleft">
             SAVOIR-ÊTRE
         </span>
-        <img class="skill1" src="./img_cv/savoir_etre.png" alt="soft">
-
-        <p>Empathie</p><br>
-        <p>Esprit d'équipe</p><br>
-        <p>Capacité d'adaptation</p><br>
-        <p>Sens de la communication</p>
-
+        <div class="skilldiv">
+        <div class="divimg">
+            <img class="skill1" src="./img_cv/savoir_etre.png" alt="soft">
+           </div> 
+           <div class="div1">
+            <p>Empathie</p><br>
+            <p>Esprit d'équipe</p><br>
+            <p>Capacité d'adaptation</p><br>
+            <p>Sens de la communication</p>
+       </div>
+    </div>
         <span class="textright">
             SAVOIR-FAIRE
         </span>
-        <img class="skill2" src="./img_cv/savoir_faire.png" alt="hard">
+        <div class="skilldiv">
+            
+        <div class="div2">
         <p>Gestion électronique de documents</p><br>
         <p>Saisie et exploitation de bases de données</p><br>
         <p>Création de pages web</p>
+    </div>
+    <div class="divimg">
+        <img class="skill2" src="./img_cv/savoir_faire.png" alt="hard">
+        </div>
+   </div> 
         <span class="textleft">
             CONNAISSANCES
         </span>
@@ -151,13 +167,12 @@
         </div>
 
     </section>
-    <img id="point" src="./img_cv/point.png" alt="points">
     <section id="experience" class="section3">
-        <header id="experience">
+        <header>
             <h1 class="heartbeat">EXPÉRIENCE PROFESSIONNELLE
             </h1>
         </header>
-        <span class="textleft">
+        <span id="formations" class="textleft">
             FORMATIONS
         </span>
 
@@ -165,6 +180,7 @@
 
             <div class="work">
                 <img class="firm" src="./img_cv/simplon.png" alt="simplon">
+                <p>______</p>
                 <p>Applications mobile ios</p>
             </div>
             <div class="divtime">
@@ -180,6 +196,7 @@
             </div>
             <div>
                 <img class="firm2" src="./img_cv/vecteur.gif" alt="vecteur">
+                <p>______</p>
                 <p>Pack Office 2013</p>
             </div>
         </div>
@@ -187,7 +204,8 @@
         <div>
             <div>
                 <img class="firm2" src="./img_cv/UVHC1.png" alt="uvhc">
-                <p>Licence<br> Langues Etrangères</p>
+                <p>______</p>
+                <p>Licence Langues Etrangères</p>
             </div>
             <div class="divtime">
                 <img class="time" src="./img_cv/date.png" alt="time2">
@@ -198,13 +216,14 @@
         <span class="textright">
             PARCOURS PROFESSIONNEL
         </span>
-        <div>
+        <div id="job">
             <div class="divtime">
                 <img class="time" src="./img_cv/date2.png" alt="time1">
                 <p>09<br>2023</p>
             </div>
             <div>
                 <img class="firm" src="./img_cv/ageval.png" alt="ageval">
+                <p>______</p>
                 <p>Employé polyvalent <br>Atelier Numérique</p>
             </div>
         </div>
@@ -213,6 +232,7 @@
 
             <div>
                 <img class="firm" src="./img_cv/apf.png" alt="afp">
+                <p>______</p>
                 <p>Téléconseiller</p>
             </div>
             <div class="divtime">
@@ -229,6 +249,7 @@
             </div>
             <div>
                 <img class="firm" src="./img_cv/arista.png" alt="arista">
+                <p>______</p>
                 <p>Opérateur de saisie</p>
             </div>
         </div>
@@ -237,6 +258,7 @@
 
             <div>
                 <img class="firm" src="./img_cv/ing.png" alt="ing">
+                <p>______</p>
                 <p>Opérateur de saisie</p>
             </div>
             <div class="divtime">
@@ -254,6 +276,7 @@
             </div>
             <div>
                 <img class="firm" src="./img_cv/amazon.png" alt="amazon">
+                <p>______</p>
                 <p>Logisticien</p>
             </div>
         </div>
@@ -262,6 +285,7 @@
 
             <div>
                 <img class="firm" src="./img_cv/arista.png" alt="arista">
+                <p>______</p>
                 <p>Opérateur de saisie</p>
             </div>
             <div class="divtime">
@@ -279,6 +303,7 @@
             </div>
             <div>
                 <img class="firm" src="./img_cv/b2s.png" alt="b2s">
+                <p>______</p>
                 <p>Téléconseiller</p>
             </div>
         </div>
@@ -287,6 +312,7 @@
 
             <div>
                 <img class="firm3" src="./img_cv/famars.png" alt="famars">
+                <p>______</p>
                 <p>Agent administratif<br>
                     Mairie de Famars</p>
             </div>
@@ -305,30 +331,47 @@
             </div>
             <div>
                 <img class="firm3" src="./img_cv/ecole.gif" alt="ecole">
+                <p>______</p>
                 <p>Employé de vie scolaire<br>
                     Ecole de Maing</p>
             </div>
         </div>
+        <hr>
+        <div>
+
+            <div>
+                <img class="firm3" src="./img_cv/interim.jpg" alt="interim">
+                <p>______</p>
+                <p>Diverses missions intérim</p>
+            </div>
+            <div class="divtime">
+                <img class="time" src="./img_cv/date.png" alt="time2">
+                <p>2005</p>
+            </div>
+        </div>
     </section>
-    <img id="point" src="./img_cv/point.png" alt="points">
 
     <section id="contact" class="section4">
         <header>
-            <h1  class="heartbeat">CONTACT
+            <h1 class="heartbeat">CONTACT
             </h1>
         </header>
-        <div id="bottom">
+        <div>
             <a href="tel:0630309033"><img src="./img_cv/icon_phone.png" alt="phone"></a>
             <a href="mailto:michaelsmague@sfr.fr"><img src="./img_cv/mail.png" alt="mail"></a>
             <a href="https://www.linkedin.com/in/michael-smague/" target="_blank"><img src="./img_cv/linkedin.png"
                     alt="link"></a>
+            <a href=""><img src="./img_cv/github.png" alt="github"></a>
+
         </div>
     </section>
+    <script src="cv.js"></script>
 </body>
+
 <footer>
     <nav>
         <ol class="navmobile">
-            <li><a  href=""><i class="fa-solid fa-circle-info"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-circle-info"></i></a></li>
             <li><a href="#competences"><i class="fa-solid fa-user-gear"></i></a></li>
             <li><a href="#experience"><i class="fa-solid fa-briefcase"></i></a></li>
             <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>

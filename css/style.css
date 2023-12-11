@@ -67,12 +67,33 @@
         transform: translateX(-400%);
     }
 }
+.section2>header {
+    background-image: url(../img_cv/work.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+.section3>header{
+    background-image: url(../img_cv/work2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.section4>header{
+    background-image: url(../img_cv/contact.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .heartbeat {
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
-
+hr{
+    border: 5px solid grey;
+    opacity: 0.3;
+}
 
 body {
     font-size: 20px;
@@ -87,7 +108,7 @@ body {
 
 
 header p {
-    font-size: 2.3rem;
+    font-size: 25px;
     font-weight: 900;
 }
 
@@ -169,23 +190,21 @@ header p {
 }
 
 .download p {
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 i {
-    margin-top: 20px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 15px;
-    padding: 160px 0;
-    font-size: 2.2rem;
-    color: white; 
+    padding: 20% 0 10% 0;
+    font-size: 1.5rem;
+    color: black; 
     bottom: 65%;
     right: 5%;
-    text-shadow: 2px 0 0 black, 2px 2px 0 black, 0 2px 0 black, -2px 2px 0 black, -2px 0 0 black, -2px -2px 0 black, 0 -2px 0 black, 2px -2px 0 black;
+    text-shadow: 2px 0 0 white, 2px 2px 0 white, 0 2px 0 white, -2px 2px 0 white, -2px 0 0 white, -2px -2px 0 white, 0 -2px 0 white, 2px -2px 0 white;
 
 }
 
@@ -209,7 +228,7 @@ h2 {
 
 .donnees p {
     position: absolute;
-    font-size: 2rem;
+    font-size: 1rem;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -225,7 +244,7 @@ h2 {
 
 span {
     display: block;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 50px 0 15px 0;
@@ -235,6 +254,13 @@ span {
 
 }
 
+
+
+.skill1,.skill2 {
+    width: 30%;
+    filter: drop-shadow(2px 9px 14px black);
+    padding: 30px 130px;
+}
 .textleft {
     text-align: left;
 }
@@ -269,7 +295,7 @@ header {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2rem;
 }
 
@@ -336,7 +362,7 @@ a {
 }
 
 .ios img {
-    width: 40%;
+    width: 30%;
     filter: drop-shadow(20px 24px 10px grey);
     padding: 10px 0;
 
@@ -356,10 +382,6 @@ a {
     width: 100%;
 }
 
-#point {
-    width: 10%;
-    margin: 20px 0;
-}
 
 .flag {
     display: inline-block;
@@ -370,10 +392,11 @@ a {
 
 section p {
     font-weight: bolder;
+    
 }
 
 .section2 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .skill1 {
@@ -391,7 +414,7 @@ section p {
 }
 
 .section3 .divtime>p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .section3 div {
@@ -436,7 +459,6 @@ section p {
 }
 
 .divtime p {
-    color: white;
     position: absolute;
     z-index: 2;
     font-size: 1.2rem;
@@ -446,24 +468,18 @@ section p {
 
 }
 
-.section4 {
+.section2, .section3, .section4 {
     padding-bottom: 30%;
 }
 
 .section4 div {
     padding-top: 10%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 
-.section4 header>img {
-    height: 30vh;
-    padding: 0;
-}
 
 .section4 div img {
     width: 30%;
@@ -484,29 +500,72 @@ section p {
     header p {
         font-size: 4rem;
     }
+    .home{
+        width: 45%;
+    }
+    .donnees{
+        display: flex;
+    }
+    .donnees div{
+        width: calc(100%/3);
+    }
+    .ios img{
+        width: 20%;
+        padding: 10px 60px;
+    }
+    .flag{
+        width: 20%;
+    }
+    .time{
+        width: 35%;
+    }
+    .section4 div img{
+        width: 20%;
+    }
+    .skilldiv{
+        display: flex;
+    }
+
+    .div1{
+        width: 50%;
+        text-align: left;
+        margin: auto;
+    }
+    .div2{
+        width: 50%;
+        margin: auto;
+        text-align: right;
+        
+    }
+    .divimg{
+        display: flex;
+        width: 50%;
+        text-align: center;
+    }
+    
+ 
+    .skill1,.skill2 {
+        width: 30%;
+        filter: drop-shadow(2px 9px 14px black);
+        padding: 30px 130px;
+    }
+    .firm{
+        width: 40%;
+    }
+    .firm2{
+        width: 45%;
+    }
+    .firm3{
+        width: 30%;
+    }
+    h1{
+        font-size: 2rem;
+    }
 }
 
 /* Media PC */
 @media screen and (min-width:1024px) {
-    .section2>header {
-        background-image: url(../img_cv/work.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
     
-    .section3>header{
-        background-image: url(../img_cv/work2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    .section4>header{
-        background-image: url(../img_cv/contact.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
     .pitch {
         margin: 5% 11%;
         font-size: 1.2rem;
@@ -658,14 +717,31 @@ section p {
     .slider img {
         width: 100%;
     }
-
-
-    .skill1,
-    .skill2 {
-        width: 16%;
+    .skilldiv{
+        display: flex;
+    }
+    .div1{
+        width: 50%;
+        text-align: left;
+        margin: auto;
+    }
+    .div2{
+        width: 50%;
+        text-align: right;
+        margin: auto;
+    }
+    .divimg{
+        width: 50%;
+        text-align: center;
+    }
+    
+ 
+    .skill1,.skill2 {
+        width: 30%;
         filter: drop-shadow(2px 9px 14px black);
         padding: 30px 130px;
     }
+    
 
     .ios img {
         width: 16%;
@@ -679,7 +755,7 @@ section p {
     }
 
     .section2 p {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         line-height: 50px;
     }
 
@@ -696,7 +772,7 @@ section p {
     }
 
     i {
-        font-size: 80px;
+        font-size: 40px;
     }
 
     .user {
@@ -708,7 +784,7 @@ section p {
     }
 
     .flag {
-        width: 10%;
+        width: 15%;
         padding: 10px 15px;
 
     }
@@ -726,15 +802,16 @@ section p {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .section4 div {
+        display: flex;
         flex-direction: row;
     }
 
     .section4 a {
-        width: calc(100%/3);
+        width: calc(100%/2);
     }
 
     .section4 img {
@@ -759,18 +836,18 @@ section p {
     }
 
     .section3 .divtime>p {
-        font-size: 3rem;
+        font-size: 1.5rem;
         line-height: 55px;
     }
 
     section p {
         font-weight: bolder;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         line-height: 50px;
     }
 
     span {
-        font-size: 3.3rem;
+        font-size: 2rem;
 
     }
 
@@ -791,18 +868,18 @@ section p {
 
     ol {
         padding: 0;
+        margin: 0;
     }
 
     li {
         position: relative;
         display: block;
-        float: left;
-        text-align: center;
         width: calc(100%/4);
-        margin: auto;
+        height: 75px;
+        justify-content: space-between;
         padding: 5px 0;
         background-color: rgb(20, 20, 20);
-
+        transition: .5s;
     }
 
     li:hover {
@@ -814,9 +891,10 @@ section p {
     }
 
     li>a {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: white;
         text-decoration: none;
+        margin: auto;
 
     }
 
@@ -854,4 +932,5 @@ section p {
     .slider-1{
         display: none;
     }
+    
 }
