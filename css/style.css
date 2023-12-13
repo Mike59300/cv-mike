@@ -2,6 +2,11 @@
 @import url('https://fonts.cdnfonts.com/css/reey');
 @import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&display=swap');
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 @keyframes heartbeat {
     from {
         -webkit-transform: scale(1);
@@ -67,6 +72,7 @@
         transform: translateX(-400%);
     }
 }
+
 .section2>header {
     background-image: url(../img_cv/work.jpg);
     background-size: 100%;
@@ -74,23 +80,26 @@
     background-attachment: fixed;
 }
 
-.section3>header{
+.section3>header {
     background-image: url(../img_cv/work2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.section4>header{
+
+.section4>header {
     background-image: url(../img_cv/contact.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .heartbeat {
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
-hr{
+
+hr {
     border: 5px solid grey;
     opacity: 0.3;
 }
@@ -183,6 +192,7 @@ header p {
     text-align: center;
     margin: 0;
     display: block;
+    padding: 30px 0;
 }
 
 .download img {
@@ -194,14 +204,14 @@ header p {
 }
 
 i {
-    font-size: 30px;
+    font-size: 45px;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
     padding: 20% 0 10% 0;
     font-size: 1.5rem;
-    color: black; 
+    color: black;
     bottom: 65%;
     right: 5%;
     text-shadow: 2px 0 0 white, 2px 2px 0 white, 0 2px 0 white, -2px 2px 0 white, -2px 0 0 white, -2px -2px 0 white, 0 -2px 0 white, 2px -2px 0 white;
@@ -217,25 +227,27 @@ h2 {
 }
 
 .donnees {
+    display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
 .donnees div {
+    width: calc(100%/3);
     position: relative;
     text-align: center;
 }
 
 .donnees p {
     position: absolute;
-    font-size: 1rem;
+    font-size: 0.7rem;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .home {
-    width: 40%;
+    width: 75%;
     margin: 10px 0;
     filter: drop-shadow(2px 9px 14px black);
 
@@ -244,7 +256,7 @@ h2 {
 
 span {
     display: block;
-    font-size: 1.5rem;
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin: 50px 0 15px 0;
@@ -256,11 +268,14 @@ span {
 
 
 
-.skill1,.skill2 {
+
+.skill1,
+.skill2 {
     width: 30%;
     filter: drop-shadow(2px 9px 14px black);
     padding: 30px 130px;
 }
+
 .textleft {
     text-align: left;
 }
@@ -295,7 +310,6 @@ header {
 }
 
 p {
-    font-size: 1rem;
     line-height: 2rem;
 }
 
@@ -336,7 +350,6 @@ ol {
 
 li {
     float: left;
-    border-width: solid 5px black;
     text-align: center;
     width: calc(100%/4);
     padding: 5px 0;
@@ -345,6 +358,18 @@ li {
 a {
     font-size: 2rem;
     color: black;
+}
+
+
+li:hover,
+li:hover.active {
+    background-color: orange;
+    color: #000000;
+}
+
+.active {
+    background-color: orange;
+
 }
 
 .section2 {
@@ -392,7 +417,7 @@ a {
 
 section p {
     font-weight: bolder;
-    
+
 }
 
 .section2 p {
@@ -468,8 +493,10 @@ section p {
 
 }
 
-.section2, .section3, .section4 {
-    padding-bottom: 30%;
+.section2,
+.section3,
+.section4 {
+    padding-bottom: 10%;
 }
 
 .section4 div {
@@ -490,7 +517,8 @@ section p {
 .navpc {
     display: none;
 }
-.carrousel{
+
+.carrousel {
     display: none;
 }
 
@@ -500,75 +528,100 @@ section p {
     header p {
         font-size: 4rem;
     }
-    .home{
+
+    .home {
         width: 45%;
     }
-    .donnees{
-        display: flex;
-    }
-    .donnees div{
-        width: calc(100%/3);
-    }
-    .ios img{
-        width: 20%;
-        padding: 10px 60px;
-    }
-    .flag{
-        width: 20%;
-    }
-    .time{
-        width: 35%;
-    }
-    .section4 div img{
-        width: 20%;
-    }
-    .skilldiv{
+
+    .donnees {
         display: flex;
     }
 
-    .div1{
+    .donnees p {
+        font-size: 1.3rem;
+    }
+
+    .donnees div {
+        width: calc(100%/3);
+    }
+
+    .ios img {
+        width: 20%;
+        padding: 10px 60px;
+    }
+
+    .flag {
+        width: 20%;
+    }
+
+    .time {
+        width: 35%;
+    }
+
+    .section4 div img {
+        width: 20%;
+    }
+
+    .skilldiv {
+        display: flex;
+    }
+
+    .div1 {
         width: 50%;
         text-align: left;
         margin: auto;
     }
-    .div2{
+
+    .div2 {
         width: 50%;
         margin: auto;
         text-align: right;
-        
+
     }
-    .divimg{
+
+    .divimg {
         display: flex;
         width: 50%;
         text-align: center;
     }
-    
- 
-    .skill1,.skill2 {
+
+    .skill1,
+    .skill2 {
         width: 30%;
         filter: drop-shadow(2px 9px 14px black);
         padding: 30px 130px;
     }
-    .firm{
+
+    .firm {
         width: 40%;
     }
-    .firm2{
+
+    .firm2 {
         width: 45%;
     }
-    .firm3{
+
+    .firm3 {
         width: 30%;
     }
-    h1{
+
+    h1 {
         font-size: 2rem;
     }
+
 }
 
 /* Media PC */
 @media screen and (min-width:1024px) {
-    
+
     .pitch {
         margin: 5% 11%;
         font-size: 1.2rem;
+    }
+
+    input {
+        transform: scale(2.5);
+        margin-left: 5px;
+        cursor: pointer;
     }
 
     .carrousel {
@@ -596,7 +649,7 @@ section p {
         --middle: 3;
         --position: 1;
         pointer-events: none;
-        
+
     }
 
     .item {
@@ -644,7 +697,7 @@ section p {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
+
     input:nth-of-type(1) {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
@@ -690,9 +743,6 @@ section p {
         --position: 5;
     }
 
-
-   
-
     .wrapper {
         height: 180px;
         position: absolute;
@@ -717,31 +767,35 @@ section p {
     .slider img {
         width: 100%;
     }
-    .skilldiv{
+
+    .skilldiv {
         display: flex;
     }
-    .div1{
+
+    .div1 {
         width: 50%;
         text-align: left;
         margin: auto;
     }
-    .div2{
+
+    .div2 {
         width: 50%;
         text-align: right;
         margin: auto;
     }
-    .divimg{
+
+    .divimg {
         width: 50%;
         text-align: center;
     }
-    
- 
-    .skill1,.skill2 {
+
+    .skill1,
+    .skill2 {
         width: 30%;
         filter: drop-shadow(2px 9px 14px black);
         padding: 30px 130px;
     }
-    
+
 
     .ios img {
         width: 16%;
@@ -769,6 +823,10 @@ section p {
 
     .donnees img {
         width: 45%;
+    }
+
+    .donnees p {
+        font-size: 2.5rem;
     }
 
     i {
@@ -811,7 +869,7 @@ section p {
     }
 
     .section4 a {
-        width: calc(100%/2);
+        width: calc(100%/4);
     }
 
     .section4 img {
@@ -836,7 +894,7 @@ section p {
     }
 
     .section3 .divtime>p {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         line-height: 55px;
     }
 
@@ -844,6 +902,10 @@ section p {
         font-weight: bolder;
         font-size: 1.5rem;
         line-height: 50px;
+    }
+
+    .active {
+        background: orange;
     }
 
     span {
@@ -862,7 +924,8 @@ section p {
         bottom: 0;
 
     }
-    .navpc{
+
+    .navpc {
         display: block;
     }
 
@@ -882,8 +945,10 @@ section p {
         transition: .5s;
     }
 
-    li:hover {
+    li:hover,
+    li:hover.active {
         background-color: orange;
+        color: #000000;
     }
 
     li:hover a {
@@ -891,10 +956,12 @@ section p {
     }
 
     li>a {
+        display: block;
         font-size: 1.5rem;
         color: white;
         text-decoration: none;
         margin: auto;
+        padding: 25px;
 
     }
 
@@ -929,8 +996,9 @@ section p {
     footer {
         display: none;
     }
-    .slider-1{
+
+    .slider-1 {
         display: none;
     }
-    
+
 }

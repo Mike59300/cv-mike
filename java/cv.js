@@ -1,19 +1,21 @@
 let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('nav a');
+let navLinks = document.querySelectorAll('.menu>li');
 
-window.onscroll = () => {
-    section.forEach(sec => {
-      let top = window.scrollY;
-      let offset = sec.offsetTop -150;
-      let height = sec.offsetHeight;
-      let id = sec.getAttribute('id');
-      
-      if(top >= offset && top < offset + height) {
-        navLinks.forEach(links => {
-            links.classList.remove('active');
-            document.querySelector('nav a [href*=' + id + ']').classList.add ('active');
-
-        });
-      };
+window.onscroll = function() {
+    var current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      if (scrollY >= sectionTop - 60) {
+        current = section.getAttribute("id"); 
+      }
+    });
+  
+    navLinks.forEach((li) => {
+      li.classList.remove("active");
+      if (li.classList.contains(current)) {
+        li.classList.add("active");
+      }
     });
 };
+
+
