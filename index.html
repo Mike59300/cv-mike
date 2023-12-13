@@ -11,7 +11,6 @@
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./java/cv.js">
     <title>CV Michael Smague</title>
 </head>
 
@@ -30,19 +29,21 @@
         </div>
 
     </header>
-    <a href="#"><nav class="navpc"></a>
-    
-        <ol class="menu">
-            <li><a href="#infos">INFORMATIONS</a></li>
-            <li><a href="#competences">COMPÉTENCES</i></a></li>
-            <li><a href="#experience">EXPERIENCE</a>
-                <ol class="sous-menu">
-                    <li><a href="#formations">Formations</a></li>
-                    <li><a href="#job">Expérience professionnelle</a></li>
-                </ol>
-            </li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ol>
+    <a href="#">
+        <nav class="navpc">
+    </a>
+
+    <ol class="menu">
+        <li class="infos active"><a href="#infos">INFORMATIONS</a></li>
+        <li class="competences"><a href="#competences">COMPÉTENCES</i></a></li>
+        <li class="experience"><a href="#experience">EXPERIENCE</a>
+            <ol class="sous-menu">
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#job">Expérience professionnelle</a></li>
+            </ol>
+        </li>
+        <li class="contact"><a href="#contact">CONTACT</a></li>
+    </ol>
     </nav>
     <section id="infos" class="section1">
 
@@ -78,7 +79,7 @@
 
         </div>
 
-        <span class="textright">MES LOISIRS</span>
+        <span data-text="" class="textright">MES LOISIRS</span>
         <div class="slider-container slider-1">
             <div class="slider">
                 <img src="./img_cv/rando.jpg" alt="rando">
@@ -102,6 +103,8 @@
 
                 <main>
         </div>
+    
+        <br>
         <br>
         <br>
         <br>
@@ -109,7 +112,7 @@
     </section>
 
     <section id="competences" class="section2">
-        <header >
+        <header>
 
 
             <h1 class="heartbeat">COMPÉTENCES
@@ -120,30 +123,30 @@
             SAVOIR-ÊTRE
         </span>
         <div class="skilldiv">
-        <div class="divimg">
-            <img class="skill1" src="./img_cv/savoir_etre.png" alt="soft">
-           </div> 
-           <div class="div1">
-            <p>Empathie</p><br>
-            <p>Esprit d'équipe</p><br>
-            <p>Capacité d'adaptation</p><br>
-            <p>Sens de la communication</p>
-       </div>
-    </div>
+            <div class="divimg">
+                <img class="skill1" src="./img_cv/savoir_etre.png" alt="soft">
+            </div>
+            <div class="div1">
+                <p>Empathie</p><br>
+                <p>Esprit d'équipe</p><br>
+                <p>Capacité d'adaptation</p><br>
+                <p>Sens de la communication</p>
+            </div>
+        </div>
         <span class="textright">
             SAVOIR-FAIRE
         </span>
         <div class="skilldiv">
-            
-        <div class="div2">
-        <p>Gestion électronique de documents</p><br>
-        <p>Saisie et exploitation de bases de données</p><br>
-        <p>Création de pages web</p>
-    </div>
-    <div class="divimg">
-        <img class="skill2" src="./img_cv/savoir_faire.png" alt="hard">
+
+            <div class="div2">
+                <p>Gestion électronique de documents</p><br>
+                <p>Saisie et exploitation de bases de données</p><br>
+                <p>Création de pages web</p>
+            </div>
+            <div class="divimg">
+                <img class="skill2" src="./img_cv/savoir_faire.png" alt="hard">
+            </div>
         </div>
-   </div> 
         <span class="textleft">
             CONNAISSANCES
         </span>
@@ -167,6 +170,7 @@
         </div>
 
     </section>
+
     <section id="experience" class="section3">
         <header>
             <h1 class="heartbeat">EXPÉRIENCE PROFESSIONNELLE
@@ -365,21 +369,25 @@
 
         </div>
     </section>
-    <script src="cv.js"></script>
+
+
+    <footer>
+        <nav>
+            <ol class="navmobile">
+                <li class="infos"><a href="#infos"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li class="competences"><a href="#competences"><i class="fa-solid fa-user-gear"></i></a></li>
+                <li class="experience"><a href="#experience"><i class="fa-solid fa-briefcase"></i></a></li>
+                <li class="contact"><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>
+            </ol>
+        </nav>
+
+    </footer>
+
+
+
+
+    <script src="java/cv.js"></script>
+
 </body>
-
-<footer>
-    <nav>
-        <ol class="navmobile">
-            <li><a href=""><i class="fa-solid fa-circle-info"></i></a></li>
-            <li><a href="#competences"><i class="fa-solid fa-user-gear"></i></a></li>
-            <li><a href="#experience"><i class="fa-solid fa-briefcase"></i></a></li>
-            <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>
-        </ol>
-    </nav>
-</footer>
-
-
-
 
 </html>
