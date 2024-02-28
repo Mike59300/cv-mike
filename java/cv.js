@@ -1,5 +1,6 @@
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.menu>li');
+let birthday = document.getElementById('birthday')
 
 window.onscroll = function() {
     var current = "";
@@ -16,6 +17,10 @@ window.onscroll = function() {
         li.classList.add("active");
       }
     });
-};
-
+  };
+  console.log(birthday)
+var today = Date.now();
+var olday = new Date("5 June 1978");
+document.write(dateDiff(olday, today));
+document.write(" ans");
 
