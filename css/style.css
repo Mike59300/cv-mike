@@ -378,7 +378,6 @@ li:hover.active {
 }
 
 .ios {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -798,7 +797,7 @@ section p {
 
 
     .ios img {
-        width: 16%;
+        width: 12%;
         padding: 30px 125px;
         filter: drop-shadow(2px 9px 14px black);
 
@@ -842,7 +841,7 @@ section p {
     }
 
     .flag {
-        width: 15%;
+        width: 10%;
         padding: 10px 15px;
 
     }
