@@ -540,8 +540,31 @@ section p {
     .home {
         width: 45%;
     }
+<<<<<<< HEAD
 
     .donnees {
+=======
+    .donnees{
+        display: flex;
+    }
+    .donnees div{
+        width: calc(100%/3);
+    }
+    .ios img{
+        width: 15%;
+        padding: 10px 60px;
+    }
+    .flag{
+        width: 20%;
+    }
+    .time{
+        width: 35%;
+    }
+    .section4 div img{
+        width: 20%;
+    }
+    .skilldiv{
+>>>>>>> 972dc2b779d189f6a742484e284db3668ab145af
         display: flex;
     }
 
