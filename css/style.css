@@ -540,10 +540,6 @@ section p {
     .home {
         width: 45%;
     }
-<<<<<<< HEAD
-
-    .donnees {
-=======
     .donnees{
         display: flex;
     }
@@ -564,7 +560,7 @@ section p {
         width: 20%;
     }
     .skilldiv{
->>>>>>> 972dc2b779d189f6a742484e284db3668ab145af
+
         display: flex;
     }
 
