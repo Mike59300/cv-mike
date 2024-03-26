@@ -93,6 +93,15 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.section3 {
+    background-image: url(../img_cv/degrade.jpg);
+    background-size: cover;
+}
+.section4 {
+    background-image: url(../img_cv/ruche4.jpg);
+    background-size: cover;
+}
+
 
 .heartbeat {
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
