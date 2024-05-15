@@ -18,9 +18,26 @@ window.onscroll = function() {
       }
     });
   };
-  console.log(birthday)
+  console.log(BIRTHDAY)
 var today = Date.now();
-var olday = new Date("5 June 1978");
+var olday = new Date("13 May 1978");
 document.write(dateDiff(olday, today));
 document.write(" ans");
+
+let currdate = new Date;
+let curryear = currdate.getFullYear();
+let currmonth = currdate.getMonth() + 1;
+let currday = currdate.getDate();
+let moment = currmonth + "/" + currday;
+
+const BIRTHYEAR = 1978;
+const BIRTHDAY = 6 + "/" + 5;
+
+let age = curryear - BIRTHYEAR;
+if(moment < BIRTHDAY){
+  age--;
+};
+
+let agespot = document.getElementById("age");
+agespot.innerHTML = age + "ans";
 
