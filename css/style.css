@@ -491,6 +491,10 @@ section p {
     width: 30%;
 }
 
+.divgradient {
+    background: linear-gradient(to right, #f7f6f6, #131212);
+}
+
 .divtime p {
     position: absolute;
     z-index: 2;
